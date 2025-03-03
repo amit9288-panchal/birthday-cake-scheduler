@@ -20,4 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::prefix('v1')->group(function () {
     Route::get('/cake/days', [CakeEventController::class, 'getCakeDays'])->middleware(['api.auth']);
+    Route::post('/birthday/upload', [CakeEventController::class, 'uploadDeveloperBirthDay'])->middleware(['api.auth']);
 });
