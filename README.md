@@ -29,7 +29,7 @@ To get started with this project, you'll need to install the necessary dependenc
    composer install
    ````
 
-3. ** Install NPM Dependencies:**
+3. **Install NPM Dependencies:**
    ````
    npm install
    ````
@@ -45,7 +45,7 @@ To get started with this project, you'll need to install the necessary dependenc
    php artisan key:generate
    ````
 
-6. ** Set Up Your Database:** Create a database for application and update your .env file with your database credentials
+6. **Set Up Your Database:** Create a database for application and update your .env file with your database credentials
    #You can create a separate testing database and configure in .env.testing
    ````
    DB_CONNECTION=mysql
@@ -80,35 +80,40 @@ To get started with this project, you'll need to install the necessary dependenc
 
 ## Testing
 1. **Configure your testing database to phpunit.xml (if you are not using separate environment file for testing .env.testing) :**
-   ![img_1.png](storage/app/public/execution_images/img_1.png)
-2. **Execute Test Command :**
+  
+   ![img_1](https://github.com/user-attachments/assets/6e66cb81-3688-42ea-be46-ddfd537e1aa0)
+
+3. **Execute Test Command :**
+
     ````
     php artisan test
     ````
-   ![img_2.png](storage/app/public/execution_images/img_2.png)
+   <img width="1506" alt="img_2" src="https://github.com/user-attachments/assets/411d0c58-118a-4a3c-a09b-a9be76d7b208" />
+
 
 ## Execution Description :
 1. **Home Page : Loged Out Case**
 
-   ![img_3.png](storage/app/public/execution_images/img_3.png)
+   <img width="1189" alt="img_3" src="https://github.com/user-attachments/assets/dead10bd-9a94-47cf-a917-87e1304fb44f" />
+
     * It will display upcoming date including today's small or large cake will arrive and list of developers.
     * If an admin user is longed in it allow to upload a developer birthday list, based on developer entry daily schedule command executed at 1:00 AM and generate cake event and calculate
 
 
 1. **Home Page : Logged In Case**
-   ![img_4.png](storage/app/public/execution_images/img_4.png)
-   ![img_5.png](storage/app/public/execution_images/img_5.png)
-   ![img_6.png](storage/app/public/execution_images/img_6.png)
+   <img width="1199" alt="img_4" src="https://github.com/user-attachments/assets/3d1c73a9-751a-4498-847f-e175dd26cac2" />
+   <img width="1197" alt="img_5" src="https://github.com/user-attachments/assets/7d5cfccb-9654-46b9-a1a3-60cecb189717" />
+   <img width="1198" alt="img_6" src="https://github.com/user-attachments/assets/b3545e85-69c8-465d-9d59-8182f08e1e8f" />
 
 2. **Once developer birthday list uploaded if you want you can manually execute command to generate cake event**
     ````
     php artisan calculate:dayCake
     ````
 3. **Login Screen :**   
-   ![img_7.png](storage/app/public/execution_images/img_7.png)
+   <img width="1198" alt="img_7" src="https://github.com/user-attachments/assets/130a883e-9ce7-402d-9833-d927e9026292" />
 
 4. **Register Screen:**
-   ![img_8.png](storage/app/public/execution_images/img_8.png)
+   <img width="1201" alt="img_8" src="https://github.com/user-attachments/assets/f66ff8db-08bb-467c-9631-23a8cbeb61c1" />
 
 ## API:
 
@@ -116,4 +121,5 @@ To get started with this project, you'll need to install the necessary dependenc
 ````
 php artisan l5-swagger:generate
 ````
-![img_9.png](storage/app/public/execution_images/img_9.png)
+<img width="1511" alt="img_9" src="https://github.com/user-attachments/assets/12b702bd-a74a-4043-85e9-7d329dcea8dd" />
+
