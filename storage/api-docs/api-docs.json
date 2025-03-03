@@ -1,0 +1,76 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Cake Scheduler API Documentation",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/v1/cake/days": {
+            "get": {
+                "tags": [
+                    "CakeEvent"
+                ],
+                "summary": "Get cake days",
+                "operationId": "825d528117a3e873704f0d364c83f421",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "errorCode": {
+                                            "type": "string"
+                                        },
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer"
+                                                    },
+                                                    "cake_date": {
+                                                        "type": "date-time"
+                                                    },
+                                                    "small_cakes": {
+                                                        "type": "integer"
+                                                    },
+                                                    "large_cakes": {
+                                                        "format": "integer"
+                                                    },
+                                                    "developers": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "properties": {}
+                                                        }
+                                                    },
+                                                    "created_at": {
+                                                        "type": "date-time"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "CakeEvent",
+            "description": "CakeEvent"
+        }
+    ]
+}
